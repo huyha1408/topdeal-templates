@@ -1,0 +1,118 @@
+.header {
+    $topads-color: #ffffff;
+    $headertop-color: #222222;
+    .top-ads {
+        background-image: url("../images/topads.png");
+        background-repeat:no-repeat;
+        color: $topads-color;
+        padding: 22px 0;
+        .top-ads-title {
+            display: inline;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding:0 53px 0 137px;
+        }
+        .top-ads-text {
+            display: inline;
+            margin: 0;
+            font-size: 14px;
+            padding-right: 15px;
+        }
+        .top-ads-link {
+            color: $topads-color;
+            text-decoration: underline;
+        }
+        .close-btn {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            opacity: 1;
+            float: right;
+          }
+          .close-btn:hover {
+            opacity: 0.5;
+          }
+          .close-btn:before, .close-btn:after {
+            position: absolute;
+            content: ' ';
+            height: 20px;
+            width: 2px;
+            background-color: #0f0101;
+          }
+          .close-btn:before {
+            transform: rotate(45deg);
+          }
+          .close-btn:after {
+            transform: rotate(-45deg);
+          }
+          
+    }
+    .header-top {
+        background-color: #f2f2f2;
+        color: $headertop-color;
+        padding: 14px 0;
+        .welcome {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 700;
+            .welcome-text {
+                display: inline;
+            }
+            .welcome-link {
+                color: #ff5c00;
+            }
+        }
+        .user-tool {
+            font-size: 12px;
+            .user-tool-items {
+                .fa-angle-down {
+                    padding-left: 7px;
+                }
+            }
+            .uitem1 {
+                .fa-lock {
+                    padding-right: 8px;
+                }
+                .fa-angle-down {
+                    padding-right: 11px;
+                }
+            }
+            .uitem2 {
+                padding-left: 13px;
+                .fa-user {
+                    padding-right: 7px;
+                }
+                .fa-angle-down {
+                    padding-right: 15px;
+                }
+            }
+            .uitem3 {
+                padding-left: 13px;
+                .flags {
+                    object-fit: cover;
+                    width: 25px;
+                    padding-right: 5px;
+                }
+                .fa-angle-down {
+                    padding-right: 15px;
+                }
+            }
+            .uitem4 {
+                padding-left: 15px;
+            }
+            .uitem1::after,
+            .uitem2::after,
+            .uitem3::after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #dddddd;
+                content: '';
+                width: 1px;
+                height: 16px;
+                display: inline-block;
+            }
+        }
+    }
+}
