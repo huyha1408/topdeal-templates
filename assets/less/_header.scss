@@ -1,6 +1,7 @@
 .header {
     $topads-color: #ffffff;
-    $headertop-color: #222222;
+    $header-color: #222222;
+    $main-color: #ff5722;
     .top-ads {
         background-image: url("../images/topads.png");
         background-repeat:no-repeat;
@@ -48,9 +49,10 @@
           }
           
     }
+
     .header-top {
         background-color: #f2f2f2;
-        color: $headertop-color;
+        color: $header-color;
         padding: 14px 0;
         .welcome {
             margin: 0;
@@ -112,6 +114,80 @@
                 width: 1px;
                 height: 16px;
                 display: inline-block;
+            }
+        }
+    }
+
+    .header-mid {
+        padding: 35px 0;
+        .searchForm {
+            position: relative;
+            .cate-select {
+                display: inline-block;
+                position: absolute;
+                color: #232f3e;
+                font-size: 13px;
+                height: auto;
+                padding: 12.5px 0 12.5px 12px;
+                width: 23%;
+                border: 1px solid #e1e1e1;
+                border-radius: 3px 0 0 3px;
+                border-right-style: none;
+                top: 0;
+                left: 0;
+                
+            }
+            .form-control {
+                width: 77%;
+                float: right;
+                border: 1px solid #e1e1e1;
+                border-radius: 0 3px 3px 0;
+                font-size: 13px;
+                padding: 21px 0 21px 11px;
+            }
+            .btn-search {
+                position: absolute;
+                background-color: $main-color;
+                border: none;
+                border-radius: 0 0.25rem 0.25rem 0;
+                color: #ffffff;
+                font-size: 14px;
+                top: 0;
+                right: 0;
+                padding: 11px 29px 12px 15px;
+            }
+        }
+        .shop-cart {
+            float: right;
+            .cart-menu {
+                float: left;
+
+                .cart-ico:first-child,
+                .cart-ico:nth-child(2) {
+                    padding-right: 20px;
+                }
+                .cart-ico:last-child {
+                    padding-right: 11px;
+                }
+            }
+            .cart-text {
+                display: inline-block;
+                .my-cart {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $header-color;
+                }
+                .item-count {
+                    margin: 0;
+                    font-size: 12px;
+                    .item-num {
+                        color: #555555;
+                    }
+                    .item-price {
+                        color: $main-color;
+                    }
+                }
             }
         }
     }
