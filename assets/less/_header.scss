@@ -191,4 +191,80 @@
             }
         }
     }
+
+    .header-bottom {
+        .main-menu {
+            .main-wrap {
+                .main-navigation{
+                    .main-nav-menu:last-child {
+                        padding-right: 0px;
+                        padding-left: 18px;
+                    }
+                    .main-nav-menu {
+                        padding-right: 21px;
+                        .nav-menu-title {
+                            color: $header-color;
+                            font-size: 13px;
+                            font-weight: 700;
+                        }
+                        span.tt1::after,
+                        span.tt2::after,
+                        span.tt4::after {
+                            content: "\f0d7";
+                            color: $header-color;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-family: FontAwesome;
+                            margin-left: 2px;
+                            position: relative;
+                            top: 0;
+                            font-size: 12px;
+                        }
+                        
+                        .nav-menu-icon {
+                            position: absolute;
+                            top: -18px;
+                            right: 0;
+                            width: 35px;
+                            height: 16px;
+                            line-height: 16px;
+                            background-color: #00abf0;
+                            color: #fff;
+                            font-size: 10px !important;
+                            text-align: center;
+                            text-transform: uppercase;
+                            z-index:1;
+                        }
+                        .nav-menu-icon::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -6px;
+                            left: 6px;
+                            width: 0;
+                            height: 0;
+                            border: 1px solid transparent;
+                            border-left-width: 1px;
+                            border-right-width: 6px;
+                            border-top: 6px solid #00abf0;
+                        }
+                    }
+                    .main-nav-menu>a {
+                        position: relative;
+                    }
+                }
+            }
+        
+            .menu-right {
+                float: right;
+                li.menu-right-item>a {
+                    font-size: 14px;
+                    color: #555555;
+                }
+                li.menu-right-item:first-child {
+                    padding-right: 25px;
+                }
+            }
+        }
+
+    }
 }
