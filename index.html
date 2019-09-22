@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Custome CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -146,7 +148,7 @@
                                     </li>
                                     <li class="main-nav-menu">
                                         <a href="#">
-                                            <span class="nav-menu-icon">new</span>
+                                            <span class="more-icon more-icon-new">new</span>
                                             <span class="nav-menu-title tt2">
                                                 NEW ARRIVALS
                                             </span>
@@ -154,8 +156,8 @@
                                     </li>
                                     <li class="main-nav-menu">
                                         <a href="#">
-                                            <span class="nav-menu-icon">hot</span>
-                                            <span class="nav-menu-title">
+                                            <span class="more-icon more-icon-hot1">hot</span>
+                                            <span class="nav-menu-title tt3">
                                                 PROMOTIONS
                                             </span>
                                         </a>
@@ -169,14 +171,14 @@
                                     </li>
                                     <li class="main-nav-menu">
                                         <a href="#">
-                                            <span class="nav-menu-title">
+                                            <span class="nav-menu-title tt5">
                                                 CONTACT US
                                             </span>
                                         </a>
                                     </li>
                                     <li class="main-nav-menu">
                                         <a href="#">
-                                            <span class="nav-menu-title">
+                                            <span class="nav-menu-title tt6">
                                                 ABOUT US
                                             </span>
                                         </a>
@@ -186,12 +188,21 @@
                         </div>
                         <div class="col-xl-3">
                             <div class="menu-right">
-                                <ul class="special-offer">
+                                <ul class="special-menu">
                                     <li class="menu-right-item">
-                                        <a href="#">Special Offer!</a>
+                                        <a class="special-offer" href="#">
+                                            <span class="special-menu-text">
+                                                Special Offer!
+                                            </span>
+                                        </a>
                                     </li>
                                     <li class="menu-right-item">
-                                        <a href="#">Buy This Theme!</a>
+                                        <a class="buy-theme" href="#">
+                                            <span class="more-icon more-icon-hot2">hot</span>
+                                            <span class="special-menu-text">
+                                                Buy This Theme!
+                                            </span>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -200,15 +211,33 @@
                 </div>
             </div>
         </div>
+        
     </div>
-
-    <!-- Main js -->
-    <script src="assets/js/main.js"></script>
+    <div class="slider-wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
     <!-- Swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>   
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- BS4 Jquery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

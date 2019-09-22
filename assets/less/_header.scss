@@ -207,6 +207,9 @@
                             font-size: 13px;
                             font-weight: 700;
                         }
+                        .nav-menu-title:hover {
+                            color: $main-color;
+                        }
                         span.tt1::after,
                         span.tt2::after,
                         span.tt4::after {
@@ -220,22 +223,27 @@
                             top: 0;
                             font-size: 12px;
                         }
-                        
-                        .nav-menu-icon {
+                            
+                        .more-icon {
                             position: absolute;
                             top: -18px;
                             right: 0;
                             width: 35px;
                             height: 16px;
                             line-height: 16px;
-                            background-color: #00abf0;
                             color: #fff;
-                            font-size: 10px !important;
+                            font-size: 11px !important;
                             text-align: center;
                             text-transform: uppercase;
                             z-index:1;
                         }
-                        .nav-menu-icon::after {
+                        .more-icon-new {
+                            background-color: #00abf0;
+                        }
+                        .more-icon-hot1 {
+                            background-color: $main-color;
+                        }
+                        .more-icon::after {
                             content: '';
                             position: absolute;
                             bottom: -6px;
@@ -245,7 +253,12 @@
                             border: 1px solid transparent;
                             border-left-width: 1px;
                             border-right-width: 6px;
+                        }
+                        .more-icon-new::after {
                             border-top: 6px solid #00abf0;
+                        }
+                        .more-icon-hot1::after {
+                            border-top: 6px solid $main-color;
                         }
                     }
                     .main-nav-menu>a {
@@ -256,15 +269,52 @@
         
             .menu-right {
                 float: right;
-                li.menu-right-item>a {
+                .menu-right-item:first-child {
+                    padding-right: 25px;
+                }
+                .special-menu-text {
                     font-size: 14px;
                     color: #555555;
                 }
-                li.menu-right-item:first-child {
-                    padding-right: 25px;
+                .menu-right-item a.buy-theme {
+                    position: relative;
+                }
+                span.more-icon {
+                    position: absolute;
+                    top: -18px;
+                    right: 0;
+                    width: 35px;
+                    height: 16px;
+                    line-height: 16px;
+                    color: #fff;
+                    font-size: 11px !important;
+                    text-align: center;
+                    text-transform: uppercase;
+                    z-index:1;
+                }
+                span.more-icon-hot2 {
+                    background-color: #e74c3c;
+                }
+                span.more-icon::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -6px;
+                    left: 6px;
+                    width: 0;
+                    height: 0;
+                    border: 1px solid transparent;
+                    border-left-width: 1px;
+                    border-right-width: 6px;
+                }
+                span.more-icon-hot2::after {
+                    border-top: 6px solid #e74c3c;
+                }
+                .special-menu-text:hover {
+                    color: $main-color;
                 }
             }
         }
 
     }
+
 }
