@@ -50,6 +50,9 @@ li {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-          }
+        }
+        .swiper-pagination {
+            bottom: 40px;
+        }
     }
 }
