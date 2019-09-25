@@ -1,7 +1,8 @@
 $(function () {
     var swiper = new Swiper('.swiper-container', {
         autoplay: {
-          delay: 4000
+          delay: 3500,
+          disableOnInteraction: false
         },
         pagination: {
           el: '.swiper-pagination',

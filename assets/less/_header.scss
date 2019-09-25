@@ -133,8 +133,13 @@
                 border-radius: 3px 0 0 3px;
                 border-right-style: none;
                 top: 0;
-                left: 0;
-                
+                left: 0; 
+            }
+            .cate-select:focus,
+            .form-control:focus,
+            .btn-search:focus {
+                box-shadow: none;
+                outline: none;
             }
             .form-control {
                 width: 77%;
