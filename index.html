@@ -24,7 +24,7 @@
                 <h5 class="top-ads-title">[ SUMMER SALE ]</h5>
                 <p class="top-ads-text">Sign up to receive the lastest Topdeal exclusives + 10% off your first order</p>
                 <a class="top-ads-link" href="#">Learn more</a>
-                <span class="close">
+                <span class="close" data-id="closebtn">
                     <a class="close-btn" href="#"></a>
                 </span>
             </div>
@@ -40,28 +40,37 @@
                     </div>
                     <div class="col-xl-6 user-tool">
                         <ul class="user-tool-menu pull-right">
-                            <li class="user-tool-items uitem1">
-                                <a href="#">
+                            <li class="user-tool-item login dropdown">
+                                <a href="#" class="dropbtn">
                                     <i class="fa fa-lock"></i>
                                     Login
                                     <i class="fa fa-angle-down"></i>
                                 </a>
+                                <div class="dropdown-content">
+                                    <a class="drop-item" href="#">Info</a>
+                                    <a class="drop-item" href="#">Setting</a>
+                                </div>
                             </li>
-                            <li class="user-tool-items uitem2">
-                                <a href="#">
+                            <li class="user-tool-item account dropdown">
+                                <a href="#" class="dropbtn">
                                     <i class="fa fa-user"></i>
                                     My Account
                                     <i class="fa fa-angle-down"></i>
                                 </a>
+                                <div class="dropdown-content">
+                                    <a class="drop-item" href="#">Checkout</a>
+                                    <a class="drop-item" href="#">Password</a>
+                                    <a class="drop-item" href="#">Setting</a>
+                                </div>
                             </li>
-                            <li class="user-tool-items uitem3">
+                            <li class="user-tool-item language">
                                 <a href="#">
                                     <img class="flags" src="assets/images/flags/flag-uk.png" alt="UK flag">
                                     English
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                             </li>
-                            <li class="user-tool-items uitem4">
+                            <li class="user-tool-item currency">
                                 <a href="#">
                                     USD 
                                     <i class="fa fa-angle-down"></i>
@@ -135,6 +144,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3">
+                            <div class="vertical-menu">
+                                <ul class="categories">
+                                    <li class="categories-item categories-title">
+                                        <a class="categories-link" href="#">
+                                            <span class="categories-icon"><img src="assets/images/categories-ico/title-icon.png" alt=""></span>
+                                            <span class="categories-text">ALL CATEGORIES</span>
+                                            <span class="categories-title-arrow"><img src="assets/images/categories-ico/droparrow.png" alt=""></span>
+                                        </a>
+                                    </li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                    <li class="categories-item"></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-xl-6">
                             <nav class="main-wrap">
@@ -211,23 +241,347 @@
                 </div>
             </div>
         </div>
-        
-    </div>
-    <div class="slider-wrap">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_1.png" alt="slider1"></div>
-                <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_2.png" alt="slider2"></div>
-                <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_3.png" alt="slider3"></div>
-                <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_4.png" alt="slider4"></div>
+        <div class="slider-wrap">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_1.png" alt="slider1"></div>
+                    <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_2.png" alt="slider2"></div>
+                    <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_3.png" alt="slider3"></div>
+                    <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_4.png" alt="slider4"></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
             </div>
-            <div class="swiper-pagination swiper-pagination-white"></div>
         </div>
     </div>
-    <!-- Swiper -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>   
+    <div class="main-content">
+        <div class="first-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <img src="assets/images/Banner/banner1.png" alt="">
+                    </div>
+                    <div class="col-xl-4">
+                        <img src="assets/images/Banner/banner2.png" alt="">
+                    </div>
+                    <div class="col-xl-4">
+                        <img src="assets/images/Banner/banner3.png" alt="">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="newsletter-text">
+                            <img src="assets/images/newsletter.png" alt="">
+                            <h5 class="newsletter-inner">
+                                SIGN UP TO NEWSLETTER
+                                <span class="newsletter-inner-right">AND RECEIVE <span style="color: #ff5722   ">$29</span> COUPON FOR FIRST SHOPPING</span>
+                            </h5>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="newsletter-right">
+                            <div class="subscription-form">
+                                <form class="inputForm">
+                                    <input class="subscription-input-field" type="text" placeholder="Enter your search...">
+                                    <button class="subscription-btn" type="submit"><i class="fa fa-envelope"></i></button>
+                                </form>
+                            </div>
+                            <div class="social-media">
+                                <ul class="list-social-media">
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                    </li>
+                                    <li class="social-media-item">
+                                        <a href="#"><i class="fa fa-twitch "></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="horizon-line"></div>
+        <div class="group-link">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">FASHION & ACCESSORIES</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Clothing</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Shoes</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Jewelry</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Watches</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Handbags & Wallets</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">SPA & MASSAGE</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Makeup</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Skin Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Hair Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Tool & Accessories</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Perfume & Cologne</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">More to Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">TRAVEL & VACATION</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Top 10 Hotels</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Travel Tour</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Bundle Deal</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Top Fights</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Vacation Retals</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Cruise</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">DIGITAL & ELECTRONICS</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Home Audio & Theater</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Camera, Photo & Video</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Cell Phones & Accessories</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Headphones</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Video Games</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Bluetooth Wireless Speaker</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">SPORT & ENTERTAIMENT</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Yoga & Fitness</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Games</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Cinema</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Studio</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Music</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Shopping</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">FOOD & RESTAURANT</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Fast Food</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Buffet</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Café</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Drink</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Cake</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Restaurant</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">HEALTH & BEAUTY</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Makeup</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Skin Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Hair Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Tool & Accessories</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Perfume & Cologne</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">More to Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">BOOK STATIONERY</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Award Winners</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Bargain Book</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Best Books of 2016</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Best Books of the Month</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Books in Spanish</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Children's Books</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">REAL HOUSE</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Makeup</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Skin Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Hair Care</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Tool & Accessories</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Perfume & Cologne</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">More to Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-custom">
+                        <h6 class="group-link-title">MOM & BABY CARE</h6>
+                        <div class="group-link-hl"></div>
+                        <ul class="groupLink">
+                            <li class="group-link-item">
+                                <a href="#">Award Winners</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Bargain Book</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Best Books of 2016</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Best Books of the Month</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Books in Spanish</a>
+                            </li>
+                            <li class="group-link-item">
+                                <a href="#">Children's Books</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-about">
+            <div class="logo-footer">
+                <a href="#">
+                    <img class="logo" src="assets/images/Logo.png" alt="logo">
+                </a>
+                <p>They key is to have every key, the key to open every door. We don't see them we will them</p>
+            </div>
+        </div>
+    </div>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>   
     <!-- BS4 Jquery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Main JS -->

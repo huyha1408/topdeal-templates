@@ -1,10 +1,10 @@
 .header {
-    $topads-color: #ffffff;
-    $header-color: #222222;
+    $white: #ffffff;
+    $main-text-color: #222222;
     $main-color: #ff5722;
     .top-ads {
         background-image: url("../images/topads.png");
-        color: $topads-color;
+        color: $white;
         padding: 22px 0;
         .top-ads-title {
             display: inline;
@@ -20,7 +20,7 @@
             padding-right: 15px;
         }
         .top-ads-link {
-            color: $topads-color;
+            color: $white;
             text-decoration: underline;
         }
         .close-btn {
@@ -51,7 +51,7 @@
 
     .header-top {
         background-color: #f2f2f2;
-        color: $header-color;
+        color: $main-text-color;
         padding: 14px 0;
         .welcome {
             margin: 0;
@@ -66,12 +66,38 @@
         }
         .user-tool {
             font-size: 12px;
-            .user-tool-items {
+            .user-tool-item {
                 .fa-angle-down {
                     padding-left: 7px;
                 }
             }
-            .uitem1 {
+            .dropdown {
+                position: relative;
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 100px;
+                    z-index: 1;
+                    top: 30px;
+                    border-radius: 3px;
+                    box-shadow: 2px 0 3px #00000042;
+                    .drop-item{
+                        color: #222222;
+                        display: block;
+                        padding: 10px 19px;
+                    }
+                    .drop-item:hover {
+                        background: #ddd;
+                    }
+                }
+
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .login {
                 .fa-lock {
                     padding-right: 8px;
                 }
@@ -79,7 +105,7 @@
                     padding-right: 11px;
                 }
             }
-            .uitem2 {
+            .account {
                 padding-left: 13px;
                 .fa-user {
                     padding-right: 7px;
@@ -88,7 +114,7 @@
                     padding-right: 15px;
                 }
             }
-            .uitem3 {
+            .language {
                 padding-left: 13px;
                 .flags {
                     object-fit: cover;
@@ -99,12 +125,12 @@
                     padding-right: 15px;
                 }
             }
-            .uitem4 {
+            .currency {
                 padding-left: 15px;
             }
-            .uitem1::after,
-            .uitem2::after,
-            .uitem3::after {
+            .login::after,
+            .account::after,
+            .language::after {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -180,7 +206,7 @@
                     margin: 0;
                     font-size: 14px;
                     font-weight: 700;
-                    color: $header-color;
+                    color: $main-text-color;
                 }
                 .item-count {
                     margin: 0;
@@ -199,6 +225,7 @@
     .header-bottom {
         .main-menu {
             .main-wrap {
+                padding: 18px 0;
                 .main-navigation{
                     .main-nav-menu:last-child {
                         padding-right: 0px;
@@ -207,7 +234,7 @@
                     .main-nav-menu {
                         padding-right: 21px;
                         .nav-menu-title {
-                            color: $header-color;
+                            color: $main-text-color;
                             font-size: 13px;
                             font-weight: 700;
                         }
@@ -218,7 +245,7 @@
                         span.tt2::after,
                         span.tt4::after {
                             content: "\f0d7";
-                            color: $header-color;
+                            color: $main-text-color;
                             display: inline-block;
                             vertical-align: middle;
                             font-family: FontAwesome;
@@ -272,6 +299,7 @@
             }
         
             .menu-right {
+                padding: 18px 0;
                 float: right;
                 .menu-right-item:first-child {
                     padding-right: 25px;
@@ -315,6 +343,23 @@
                 }
                 .special-menu-text:hover {
                     color: $main-color;
+                }
+            }
+            .vertical-menu {
+                .categories-icon {
+                    padding-left: 15px;
+                    padding-right: 14px;
+                }
+                .categories-title {
+                    padding: 18px 0;
+                    background-color: $main-color;
+                    .categories-text {
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding-right: 33px;
+                    }
+                    .categories-title-arrow {padding-right: 15px;}
                 }
             }
         }
