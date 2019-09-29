@@ -105,13 +105,46 @@
         }
     }
 
-    .footer-about {
+    .footer-mid {
+        text-align: center;
+        color: #555555;
         .logo-footer {
             img.logo {
                 padding-bottom: 15px;
             }
-            text-align: center;
-            padding: 35px 0 20px 0;
+            padding: 35px 0 0 0;
+        }
+        .information-contact > span {
+            padding: 0 8px;
+
+            > i {
+                padding-right: 8px;
+                color: $main-color;
+            }
+        }
+        .download-group {
+            padding: 20px 0 30px 0;
+            > a {
+                padding:0 4px 0 4px;
+            }
+        }
+        
+    }
+
+    .footer-bottom {
+        position: relative;
+        background-color: $main-text-color;
+        padding: 20px 0;
+        .copy-rights {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ffffff;
+            font-size: 12px;
+
+            .special-text {
+                color: $main-color;
+            }
         }
     }
 }
