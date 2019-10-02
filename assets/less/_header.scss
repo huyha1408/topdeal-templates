@@ -346,20 +346,98 @@
                 }
             }
             .vertical-menu {
-                .categories-icon {
-                    padding-left: 15px;
-                    padding-right: 14px;
-                }
-                .categories-title {
-                    padding: 18px 0;
-                    background-color: $main-color;
-                    .categories-text {
-                        color: $white;
-                        font-size: 14px;
-                        font-weight: 700;
-                        padding-right: 33px;
+                .navbar-vertical{
+                    .navbar-toggles {
+                        display: block;
+                        background: $main-color;
+                        border: 0;
+                        border-radius: 7px 7px 0 0;
+                        outline: none !important;
+                        text-align: left;
+                        width: 100%;
+                        line-height: 55px;
+                        
+                        .title-nav {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $white;
+                        }
+                        
                     }
-                    .categories-title-arrow {padding-right: 15px;}
+                    .navbar-toggles::before {
+                        content: '';
+                        background-image: url(../images/categories-ico/title-icon.png);
+                        vertical-align: middle;
+                        display: inline-block;
+                        position: relative;
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 15px;
+                        margin: 0 10px 0 15px;
+                    }
+                    .navbar-toggles::after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        position: relative;
+                        float: right;
+                        top: 19px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        vertical-align: middle; 
+                        background: url(../images/categories-ico/droparrow.png);
+                        margin-right: 15px;
+                    }
+                    .navbar-toggles:hover {
+                        opacity: 0.7;
+                    }
+                }
+                .vertical-wrapper {
+                    position: absolute;
+                    background: $white;
+                    z-index: 10;
+                    max-width: 270px;
+                    width: 100%;
+                    li {
+                        display: list-item;
+                        padding: 12px 0;
+                    }
+                    li.hot-deal .menu-title {
+                        font-weight: 700;
+                    }
+                    span.menu-title {
+                        font-weight: 500;
+                    }
+                    span.menu-title::after {
+                        height: 1px;
+                        content: '';
+                        background: #ebebeb;
+                        width: 90%;
+                        position: absolute;
+                        display: block; 
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 10px;
+                    }
+                    .last-item .menu-title::after {
+                        visibility: hidden;
+                    }
+                    span.icon_item {
+                        padding: 0 12px 0 20px;
+                    }
+
+                    span.caret-right {
+                        float: right;
+
+                        > i {
+                            padding-right: 15px;
+                        }
+                    }
+                    .vertical-item:hover {
+                        a.menu-link {
+                            color: $main-color;
+                        }
+                    }
                 }
             }
         }
