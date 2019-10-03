@@ -146,7 +146,7 @@
                         <div class="col-xl-3">
                             <div class="vertical-menu">
                                 <div class="navbar-vertical">
-                                    <button class="navbar-toggles" type="button">
+                                    <button id="btn1" class="navbar-toggles" type="button">
                                         <span class="title-nav">ALL CATEGORIES</span>
                                     </button>
                                 </div>
@@ -331,8 +331,8 @@
             </div>
         </div>
         <div class="slider-wrap">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper" data-item="1" data-pagi="1" data-nav="0" data-space="0" data-delay="3500">
                     <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_1.png" alt="slider1"></div>
                     <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_2.png" alt="slider2"></div>
                     <div class="swiper-slide"><img src="assets/images/Slider/Top-Slider/Slider_3.png" alt="slider3"></div>
@@ -359,11 +359,35 @@
             </div>
         </div>
         <div class="tab-deal">
-            <ul class="tab-list">
-                <li class="tab-link current-tab" data-tab="tab1">DEAL HIGHLIGHTS</li>
-                <li class="tab-link" data-tab="tab2">DEAL TODAY</li>
-                <li class="tab-link" data-tab="tab3">DEAL FOR YOU</li>
-            </ul>
+            <div class="container">
+                <div class="tab-head">
+                    <ul class="tab-menu">
+                            <li class="tab-link current-tab" data-tab="tab1">DEAL HIGHLIGHTS</li>
+                            <li class="tab-link" data-tab="tab2">DEAL TODAY</li>
+                            <li class="tab-link" data-tab="tab3">DEAL FOR YOU</li>
+                    </ul>
+                </div>
+                <div class="tab-contents">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper" data-item="4" data-pagi="1" data-nav="1" data-space="30" data-delay="5000">
+                            <div class="swiper-slide">
+                                <img src="assets/images/Flash Sale/img1.png" alt="img1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/Flash Sale/img2.png" alt="img2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/Flash Sale/img3.png" alt="img3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/Flash Sale/img4.png" alt="img4">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">

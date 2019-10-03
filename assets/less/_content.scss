@@ -1,0 +1,21 @@
+.main-content {
+    $main-text-color: #222222;
+    .tab-deal {
+        margin-top: 30px;
+        ul.tab-menu {
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+            border-bottom: 1px solid #c2c6c6;
+            li {
+                cursor: pointer;
+                padding:0 28px 10px 0;
+            }
+            .current-tab {
+                font-weight: 700;
+                color: $main-text-color;
+            }
+        }
+
+    }
+}
