@@ -25,6 +25,7 @@ $(function () {
             prevEl = '';
         }
         var swiper = new Swiper(this, {
+            autoHeight: true,
             slidesPerView: item,
             spaceBetween: itemSpace,
             pagination: {
@@ -42,19 +43,6 @@ $(function () {
             loop: true
         })
     });
-
-    // var swiper = new Swiper('.swiper-container', {
-    //     autoplay: {
-    //       delay: 3500,
-    //       disableOnInteraction: false
-    //     },
-    //     pagination: {
-    //       el: '.swiper-pagination',
-    //       clickable: true,
-    //     },
-    //     effect: 'fade',
-    //     loop: true
-    // });
 
     $('.navbar-toggles').click(function(){
         $('.vertical-wrapper').slideToggle('slow');
