@@ -59,4 +59,23 @@ $(function () {
     $('.navbar-toggles').click(function(){
         $('.vertical-wrapper').slideToggle('slow');
     })
+    $('.close').click(function() {
+        $('.top-ads').css('display','none');
+        // Store
+        sessionStorage.setItem("checkHeaderTop", "hidden");
+    })
+
+    if(typeof(Storage) !== "undefined") { 
+        var ssid = sessionStorage.getItem('checkHeaderTop');
+        if(ssid) {
+            if(ssid == 'hidden') {
+                $('.top-ads').css('display','none');
+            }
+        }else {
+            $('.top-ads').css('display','block');
+        }
+    }else {
+        $('.top-ads').css('display','block');
+    }
+
 })
