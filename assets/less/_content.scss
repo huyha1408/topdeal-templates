@@ -26,98 +26,66 @@
             }
         }
         .tab-contents {
-            .slide-wrap {
-                .product-img {
+            .slider2-btn-next {
+                position: absolute;
+                right: 0;
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                background: #e1e1d8;
+                color: $main-text-color;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    .spa_massage {
+        .spa_massage-head {
+            background-color: $white;
+            border-top: 2px solid #e9597e;
+            margin-bottom: 30px;
+            .spa_massage-text {
+                display: inline-block;   
+                background: #e9597e;
+                font-size: 16px;
+                color: $white;
+                font-weight: 700;
+                padding: 10px 23px;
+                .spa_text-inner {
+                    padding-left: 5px;
+                }
+                >img {
+                    vertical-align: inherit;
+                }
+            }
+            .spa_massage-feature {
+                float: right;
+                font-weight: 500;
+                li {
+                    padding: 10px;
+                    a:hover {
+                        color: #e9597e;
+                    }
+                }
+                .feature-current {
                     position: relative;
-                    .location {
-                        > a {
-                            color: $white;
-                        }
-                        position: absolute;
-                        bottom: 20px;
-                        left: 20px;
-                        background-color: rgba(0,0,0,0.5);
-                        border-radius: 3px;
-                        padding: 3px 17px;
-                    }
-                    .sale-ico {
-                        position: absolute;
-                        top: 20px;
-                        right: 20px;
-                        width: 52px;
-                        height: 52px;   
-                        border-radius: 52px 0 52px 52px; 
-                        color: $white;
-                        font-size: 16px;
-                        background: #63c54c;
-                        text-align: center;
-                        line-height: 52px;
-                    }
+                    > a{color: #e9597e;}
                 }
-                .product-info {
-                    padding-left: 20px;
-                    background: $white;
-                    .product-name {
-                        padding: 20px 0 30px 0;
-                        max-width: 240px;
-                        color: $main-text-color;
-                        font-weight: 500;
-                    }
-                    .product-price {
-                        padding-bottom: 15px;
-                        .price-num {
-                            display: inline-block;
-                            .num-1st {
-                                display: block;
-                                font-size: 20px;
-                                color: $main-color;
-                            }
-                            .num-2nd {
-                                display: block;
-                                font-size: 14px;
-                                color: #999999;
-                                text-decoration: line-through;
-                            }
-                        }
-                        .price-sale {
-                            position: absolute;
-                            right: 20px;
-                            bottom: 20px;
-                            max-width: 40px;
-                            display: inline-block;
-                            padding: 6px 9px;
-                            background: $main-color;
-                            line-height: 1;
-                            color: $white;
-                            text-align: center;
-                            border-radius: 5px;
-                        }
-                        .price-sale::after {
-                            position: absolute;
-                            content: '';
-                            top: 50%;
-                            transform: translateY(-50%);
-                            left: -5px;
-                            border-top: 5px solid transparent;
-                            border-right: 5px solid $main-color    ;
-                            border-bottom: 5px solid transparent;
-                            width: 0;
-                            height: 0;
-                        }
-                    }
-                }
-                .product-info::after {
-                    position: absolute;
-                    height: 1px;
+                .feature-current:after {
                     content: '';
-                    background: #e1e1d8;
-                    width: 86%;
-                    display: block;
-                    bottom: 83px;
+                    position: absolute;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid #e9597e;
+                    top: 0;
                     left: 50%;
                     transform: translateX(-50%);
                 }
             }
+        }
+        .spa_massage-wrapper {
+            clear: both;
         }
     }
 }
