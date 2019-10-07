@@ -6,6 +6,7 @@
     .first-banner {
         padding-top: 25px;
     }
+
     .tab-deal {
         margin-top: 30px;
         ul.tab-menu {
@@ -40,19 +41,20 @@
             }
         }
     }
+
     .spa_massage {
         .spa_massage-head {
             background-color: $white;
             border-top: 2px solid #e9597e;
             margin-bottom: 30px;
-            .spa_massage-text {
+            .spa-head-text {
                 display: inline-block;   
                 background: #e9597e;
                 font-size: 16px;
                 color: $white;
                 font-weight: 700;
                 padding: 10px 23px;
-                .spa_text-inner {
+                .head-text-inner{
                     padding-left: 5px;
                 }
                 >img {
@@ -84,8 +86,217 @@
                 }
             }
         }
-        .spa_massage-wrapper {
-            clear: both;
+        .view-all {
+            padding: 30px 0;
+            .view-all-inner {
+                padding-right: 5px;
+            }
+            text-align: center;
+            >a {
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                color: #666666;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+            >a:hover {
+                background: #e9597e;
+                color: #fff;
+            }
+        }
+    }
+    .fashion {
+        margin-top: 35px;
+        .fashion-head{
+            background-color: $white;
+            border-top: 2px solid #f59b31;
+            margin-bottom: 30px;
+            .fashion-head-text{
+                display: inline-block;   
+                background: #f59b31;
+                font-size: 16px;
+                color: $white;
+                font-weight: 700;
+                padding: 10px 23px;
+                .head-text-inner{
+                    padding-left: 5px;
+                }
+                >img {
+                    vertical-align: inherit;
+                }
+            }
+            .fashion-feature {
+                float: right;
+                font-weight: 500;
+                li {
+                    padding: 10px;
+                    a:hover {
+                        color: #f59b31;
+                    }
+                }
+                .feature-current {
+                    position: relative;
+                    > a{color: #f59b31;}
+                }
+                .feature-current:after {
+                    content: '';
+                    position: absolute;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid #f59b31;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .view-all {
+            padding: 30px 0;
+            .view-all-inner {
+                padding-right: 5px;
+            }
+            text-align: center;
+            >a {
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                color: #666666;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+            >a:hover {
+                background: #f59b31;
+                color: #fff;
+            }
+        }
+    }
+
+    .travel {
+        margin-top: 35px;
+        .travel-head {
+            background-color: $white;
+            border-top: 2px solid #449df0;
+            margin-bottom: 30px;
+        }
+        .travel-head-text{
+            display: inline-block;   
+            background: #449df0;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            padding: 10px 23px;
+            .head-text-inner{
+                padding-left: 5px;
+            }
+            >img {
+                vertical-align: inherit;
+            }
+        }
+        .travel-feature {
+            float: right;
+            font-weight: 500;
+            li {
+                padding: 10px;
+                a:hover {
+                    color: #449df0;
+                }
+            }
+            .feature-current {
+                position: relative;
+                > a{color: #449df0;}
+            }
+            .feature-current:after {
+                content: '';
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #449df0;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .view-all {
+            padding: 30px 0;
+            .view-all-inner {
+                padding-right: 5px;
+            }
+            text-align: center;
+            >a {
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                color: #666666;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+            >a:hover {
+                background: #449df0;
+                color: #fff;
+            }
+        }
+    }
+
+    .digital {
+        margin-top: 35px;
+        .digital-head {
+            background-color: $white;
+            border-top: 2px solid #407f7f;
+            margin-bottom: 30px;
+        }
+        .digital-head-text{
+            display: inline-block;   
+            background: #407f7f;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            padding: 10px 23px;
+            .head-text-inner{
+                padding-left: 5px;
+            }
+            >img {
+                vertical-align: inherit;
+            }
+        }
+        .digital-feature {
+            float: right;
+            font-weight: 500;
+            li {
+                padding: 10px;
+                a:hover {
+                    color: #407f7f;
+                }
+            }
+            .feature-current {
+                position: relative;
+                > a{color: #407f7f;}
+            }
+            .feature-current:after {
+                content: '';
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #407f7f;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .view-all {
+            padding: 30px 0;
+            .view-all-inner {
+                padding-right: 5px;
+            }
+            text-align: center;
+            >a {
+                border: 1px solid #e1e1e1;
+                background-color: #fff;
+                color: #666666;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+            >a:hover {
+                background: #407f7f;
+                color: #fff;
+            }
         }
     }
 }
