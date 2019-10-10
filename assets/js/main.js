@@ -17,8 +17,8 @@ $(function () {
             pagination = ''
         }
         if(itemNav == 1) {
-            nextEl = $(this).find('.slider2-btn-next');
-            prevEl = $(this).find('.slider2-btn-prev');
+            nextEl = $(this).find('.button-next');
+            prevEl = $(this).find('.button-prev');
         }
         else {
             nextEl = '';
