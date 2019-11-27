@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Custome CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body data-spy="scroll" data-target="#sticky-tool" data-offset="10">
+<body data-spy="scroll" data-target="#sticky-tool" data-offet="0">
     <div class="header">
         <div class="top-ads">
             <div class="container">
@@ -77,6 +78,11 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="logo-area">
+                            <a href="#">
+                                <img class="logo" src="assets/images/Logo.png" alt="Logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,15 +349,15 @@
         </div>
     </div>
     <div id="sticky-tool">
-        <a href="#sticky1"><img src="assets/images/sticky/1.png" alt=""></a>
+        <a class="list-group-item list-group-item-action" href="#sticky1"><img src="assets/images/sticky/1.png" alt=""></a>
 
-        <a href="#sticky2"><img src="assets/images/sticky/2.png" alt=""></a>
+        <a class="list-group-item list-group-item-action" href="#sticky2"><img src="assets/images/sticky/2.png" alt=""></a>
     
-        <a href="#sticky3"><img src="assets/images/sticky/3.png" alt=""></a>
+        <a class="list-group-item list-group-item-action" href="#sticky3"><img src="assets/images/sticky/3.png" alt=""></a>
     
-        <a href="#sticky4"><img src="assets/images/sticky/4.png" alt=""></a>
+        <a class="list-group-item list-group-item-action" href="#sticky4"><img src="assets/images/sticky/4.png" alt=""></a>
     
-        <a href="#sticky5"><img src="assets/images/sticky/5.png" alt=""></a>
+        <a class="list-group-item list-group-item-action" href="#sticky5"><img src="assets/images/sticky/5.png" alt=""></a>
         </div>
     <div class="main-content">
         <div class="first-banner">
@@ -369,17 +375,141 @@
                 </div>
             </div>
         </div>
-        <div class="tab-deal" id="sticky1">
+        <div class="flash-sale" id="sticky1">
             <div class="container">
                 <div class="tab-head">
                     <ul class="tab-menu">
-                            <li class="tab-link current-tab" data-tab="tab1">DEAL HIGHLIGHTS</li>
-                            <li class="tab-link" data-tab="tab2">DEAL TODAY</li>
-                            <li class="tab-link" data-tab="tab3">DEAL FOR YOU</li>
+                            <li class="tab-link current-tab" data-tab="flash_sale-tab1">DEAL HIGHLIGHTS</li>
+                            <li class="tab-link" data-tab="flash_sale-tab2">DEAL TODAY</li>
+                            <li class="tab-link" data-tab="flash_sale-tab3">DEAL FOR YOU</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
-                    <div class="swiper-container swiper2">
+                <div id='flash_sale-tab1' class="tab-contents current">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" data-item="4" data-pagi="1" data-nav="1" data-space="30" data-delay="100000000">
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img1.png" alt="img1"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Burger King Japan debuts Monster Baby, Double BBQ and Hash
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$59.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img2.png" alt="img2"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$329.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img3.png" alt="img3"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$69.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img4.png" alt="img4"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$229.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination custom-pagination"></div>
+                    </div>
+                    <div class="button-prev nav-logo-prev"><i class="fa fa-angle-left"></i></div>
+                    <div class="button-next nav-logo-next"><i class="fa fa-angle-right"></i></div>
+                </div>
+                <div id="flash_sale-tab2" class="tab-contents">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper" data-item="4" data-pagi="1" data-nav="1" data-space="30" data-delay="100000000">
                             <div class="swiper-slide">
                                 <div class="product-wrap">
@@ -498,6 +628,131 @@
                             </div>
                         </div>
                     </div>
+                    <div class="button-prev nav-logo-prev"><i class="fa fa-angle-left"></i></div>
+                    <div class="button-next nav-logo-next"><i class="fa fa-angle-right"></i></div>
+                </div>
+                <div id="flash_sale-tab3" class="tab-contents">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" data-item="4" data-pagi="1" data-nav="1" data-space="30" data-delay="100000000">
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img1.png" alt="img1"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Burger King Japan debuts Monster Baby, Double BBQ and Hash
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$59.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img2.png" alt="img2"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$329.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img3.png" alt="img3"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$69.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-wrap">
+                                    <div class="product-img">
+                                        <a href="#"><img src="assets/images/Flash Sale/img4.png" alt="img4"></a>
+                                        <div class="location">
+                                            <a href="#">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Thailand</span>
+                                            </a>
+                                        </div>
+                                        <span class="sale-ico">Sale</span>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            Thailand Group Departure / Pattaya / 
+                                            Bangkok 5 Days 4 Night
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="price-num">
+                                                <span class="num-1st">$229.99</span>
+                                                <span class="num-2nd">$89.99</span>
+                                            </div>
+                                            <div class="price-sale">
+                                                55% OFF
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-prev nav-logo-prev"><i class="fa fa-angle-left"></i></div>
+                    <div class="button-next nav-logo-next"><i class="fa fa-angle-right"></i></div>
                 </div>
             </div>
         </div>
@@ -1826,6 +2081,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination custom-pagination"></div>
                                 </div>
                             </div>
                             
@@ -2205,5 +2461,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+            $('.scrollspy-example').scrollspy()
+        </script>
 </body>
 </html>
